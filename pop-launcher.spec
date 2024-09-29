@@ -8,6 +8,7 @@ URL:            https://github.com/pop-os/launcher
 # get git clone --recursive https://github.com/pop-os/launcher
 Source0:        https://github.com/pop-os/launcher/archive/launcher.tar.lz
 Source1:        vendor.tar.xz
+Source2:        cargo_config
 Patch0:         fix-justfile.patch
 
 BuildRequires:	lzip
