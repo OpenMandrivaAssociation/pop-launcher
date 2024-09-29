@@ -1,0 +1,18 @@
+[source.crates-io]
+replace-with = "vendored-sources"
+
+[source."git+https://github.com/pop-os/cosmic-protocols"]
+git = "https://github.com/pop-os/cosmic-protocols"
+replace-with = "vendored-sources"
+
+[source."git+https://github.com/pop-os/dbus-settings-bindings"]
+git = "https://github.com/pop-os/dbus-settings-bindings"
+replace-with = "vendored-sources"
+
+[source."git+https://github.com/smithay/client-toolkit?rev=3bed072"]
+git = "https://github.com/smithay/client-toolkit"
+rev = "3bed072"
+replace-with = "vendored-sources"
+
+[source.vendored-sources]
+directory = "vendor"
