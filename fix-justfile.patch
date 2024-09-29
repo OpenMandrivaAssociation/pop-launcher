@@ -1,0 +1,20 @@
+diff -rub launcher/justfile launcher-patched/justfile
+--- launcher/justfile	2024-09-19 03:37:56.255920110 +0200
++++ launcher-patched/justfile	2024-09-21 02:55:46.463657381 +0200
+@@ -2,6 +2,7 @@
+ plugins := 'calc desktop_entries files find pop_shell pulse recent scripts terminal web cosmic_toplevel'
+ 
+ rootdir := ''
++prefix := '/usr'
+ debug := '0'
+ 
+ target-dir := if debug == '1' { 'target/debug' } else { 'target/release' }
+@@ -9,7 +10,7 @@
+ base-dir := if rootdir == '' {
+     env_var('HOME') / '.local'
+ } else {
+-    rootdir / 'usr'
++    rootdir + prefix
+ }
+ 
+ lib-dir := if rootdir == '' {
