@@ -1,4 +1,4 @@
-
+%undefine _debugsource_packages
 Name:           pop-launcher
 Version:        1.2.3+git20240814
 Release:        0
