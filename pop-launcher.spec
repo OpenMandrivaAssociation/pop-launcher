@@ -10,6 +10,7 @@ Source0:        https://github.com/pop-os/launcher/archive/launcher.tar.lz
 Source1:        vendor.tar.xz
 Patch0:         fix-justfile.patch
 
+BuildRequires:	lzip
 BuildRequires:  rust-packaging
 BuildRequires:  just
 BuildRequires:  pkgconfig
