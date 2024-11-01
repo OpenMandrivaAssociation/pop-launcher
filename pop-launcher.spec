@@ -1,12 +1,13 @@
 %undefine _debugsource_packages
 Name:           pop-launcher
-Version:        1.2.3+git20240814
-Release:        0
+Version:        1.2.4
+Release:        1
 Summary:        Modular IPC-based desktop launcher service
 License:        MPL-2.0
 URL:            https://github.com/pop-os/launcher
 # get git clone --recursive https://github.com/pop-os/launcher
-Source0:        https://github.com/pop-os/launcher/archive/launcher.tar.lz
+#Source0:        https://github.com/pop-os/launcher/archive/launcher.tar.lz
+Source0:        https://github.com/pop-os/launcher/archive/%{version}/launcher-%{version}.tar.gz
 Source1:        vendor.tar.xz
 Source2:        cargo_config
 Patch0:         fix-justfile.patch
@@ -35,7 +36,7 @@ pop-launcher will do its part to schedule the execution of these plugins in
 parallel, on demand.
 
 %prep
-%autosetup -n launcher -a1 -p1
+%autosetup -n launcher-%{version} -a1 -p1
 mkdir .cargo
 cp %{SOURCE2} .cargo/config
 
