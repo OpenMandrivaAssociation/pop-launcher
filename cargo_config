@@ -1,8 +1,8 @@
 [source.crates-io]
 replace-with = "vendored-sources"
 
-[source."git+https://github.com/pop-os//cosmic-protocols"]
-git = "https://github.com/pop-os//cosmic-protocols"
+[source."git+https://github.com/pop-os/cosmic-protocols"]
+git = "https://github.com/pop-os/cosmic-protocols"
 replace-with = "vendored-sources"
 
 [source."git+https://github.com/pop-os/dbus-settings-bindings"]
