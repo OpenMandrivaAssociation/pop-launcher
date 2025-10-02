@@ -1,6 +1,6 @@
 %undefine _debugsource_packages
 Name:           pop-launcher
-Version:        1.2.4
+Version:        1.2.7
 Release:        1
 Summary:        Modular IPC-based desktop launcher service
 License:        MPL-2.0
